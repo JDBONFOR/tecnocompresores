@@ -37,11 +37,11 @@
             </div>
             <div class="collapse navbar-collapse" id="nav-links">
               <ul class="nav navbar-nav navbar-right">
-                <li><a href="#our">inicio</a></li>
-                <li><a href="#led">nosotros</a></li>
-                <li><a href="#consultancy">servicios</a></li>
-                <li><a href="#energy">productos</a></li>
-                <li><a href="#contact">contacto</a></li>
+                <li><a class="borde-centro" href="#top">inicio</a></li>
+                <li><a class="borde-centro" href="#nosotros">nosotros</a></li>
+                <li><a class="borde-centro" href="#servicios">servicios</a></li>
+                <li><a class="borde-centro" href="productos.html">productos</a></li>
+                <li><a class="borde-centro" href="#contacto">contacto</a></li>
               </ul>
             </div>
           </div>
@@ -61,13 +61,13 @@
           <div class="item active">
             <img src="assets/tecnocompresores_cover1.jpg" alt="tecnocompresores">
             <div class="carousel-caption">
-              <h3 class="title">Fotografía: Atlas Copco</h3>
+              <h3 class="item-title">Fotografía: Atlas Copco</h3>
             </div>
           </div>
           <div class="item">
             <img src="assets/tecnocompresores_cover2.jpg" alt="tecnocompresores">
             <div class="carousel-caption">
-              <h3 class="title">Fotografía: Atlas Copco</h3>
+              <h3 class="item-title">Fotografía: Atlas Copco</h3>
             </div>
           </div>
           <!-- Left and right controls -->
@@ -97,20 +97,35 @@
       <div class="container">
         <div class="row">
           <h2 class="section-title">Servicios</h2>
-          <div class="col-md-6">
+          <div class="col-sm-6 col-md-6 servicio">
             <img src="assets/tecnocompresores_venta.jpg" alt="">
+            <div class="servicio-detalle">
+              <h1>venta</h1>
+            </div>
           </div>
-          <div class="col-md-6">
-            <img src="assets/tecnocompresores_alquiler.jpg" alt=""> 
+          <div class="col-sm-6 col-md-6 servicio">
+            <img src="assets/tecnocompresores_alquiler.jpg" alt="">
+            <div class="servicio-detalle">
+              <h1>alquiler</h1>
+            </div> 
           </div>
-          <div class="col-md-4">
-            <img src="assets/tecnocompresores_servicio1.jpg" alt="">  
+          <div class="col-sm-4 col-md-4 servicio">
+            <img src="assets/tecnocompresores_servicio1.jpg" alt="">
+            <div class="servicio-detalle">
+              <h1>servicio 1</h1>
+            </div>
           </div>
-          <div class="col-md-4">
-            <img src="assets/tecnocompresores_servicio2.jpg" alt="">  
+          <div class="col-sm-4 col-md-4 servicio">
+            <img src="assets/tecnocompresores_servicio2.jpg" alt="">
+            <div class="servicio-detalle">
+              <h1>servicio 2</h1>
+            </div>
           </div>
-          <div class="col-md-4">
-            <img src="assets/tecnocompresores_servicio3.jpg" alt="">  
+          <div class="col-sm-4 col-md-4 servicio">
+            <img src="assets/tecnocompresores_servicio3.jpg" alt="">
+            <div class="servicio-detalle">
+              <h1>servicio 3</h1>
+            </div>
           </div>
         </div>
       </div>
@@ -130,51 +145,57 @@
             <h2 class="section-title">Legales</h2>
             <ul class="datosLegales">
               <li>
-                <i></i>
-                <p>Av. Bartolomé Mitre 100, Munro</p>
-                <p>C.P. 1000</p>
-                <p>Buenos Aires, Argentina</p>
+                <i class="fa fa-building-o" aria-hidden="true"></i>
+                <div class="datosLegales-descripcion">
+                  <p>Av. Bartolomé Mitre 100, Munro</p>
+                  <p>C.P. 1000</p>
+                  <p>Buenos Aires, Argentina</p>
+                </div>                
               </li>
               <li>
-                <i></i>
-                <p>+54 11 0000-1111</p>
+                <i class="fa fa-phone" aria-hidden="true"></i>
+                <div class="datosLegales-descripcion">
+                  <p>+54 11 0000-1111</p>
+                </div>  
               </li>
               <li>
-                <i></i>
-                <a href="mailto:info@tecnocompresores.com.ar">info@tecnocompresores.com.ar</a>
+                <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                <div class="datosLegales-descripcion">
+                  <a href="mailto:info@tecnocompresores.com.ar">info@tecnocompresores.com.ar</a>
+                </div>  
               </li>
             </ul>
             <ul class="redesSociales">
               <li class="icon twitter">
-                <i></i>
+                <i class="fa fa-twitter" aria-hidden="true"></i>
               </li>
               <li class="icon google">
-                <i></i>
+                <i class="fa fa-google-plus" aria-hidden="true"></i>
               </li>
               <li class="icon facebook">
-                <i></i>
+                <i class="fa fa-facebook" aria-hidden="true"></i>
               </li>
               <li class="icon linkedin">
-                <i></i>
+                <i class="fa fa-linkedin" aria-hidden="true"></i>
               </li>
             </ul>
           </div>
           <div class="col-md-6">
             <h2 class="section-title">Contáctenos</h2>
             <form class="row">
-              <div class="col-md-4">
+              <div class="col-md-6 form-group">
                 <label for="name">Nombre y Apellido</label>
-                <input type="text" name="name" value="" placeholder="">
+                <input type="text" class="form-control" name="name" value="" placeholder="Ingrese su nombre y apellido">
                 <label for="age">Edad</label>
-                <input type="number" name="age" value="" placeholder="">
+                <input type="number" class="form-control" name="age" value="" placeholder="Ingrese su edad">
                 <label for="phone">Teléfono</label>
-                <input type="phone" name="phone" value="" placeholder="">
+                <input type="phone" class="form-control" name="phone" value="" placeholder="Ingrese su nro. de teléfono">
+                <button action="submit" class="btn btn-default">Enviar</button>
               </div>
-              <div class="col-md-8">
+              <div class="col-md-6">
                 <label for="message">Mensaje</label>
-                <textarea name="message" rows="6" cols=""></textarea>
-              </div>
-              <button action="submit">Enviar</button>
+                <textarea name="message" class="form-control" rows="9" cols=""></textarea>
+              </div>              
             </form>
           </div>
         </div>

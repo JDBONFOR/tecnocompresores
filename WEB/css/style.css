@@ -6,10 +6,7 @@
 /* Author: Juan Daniel Bonforti */
 /* Author's eMail: juan.bonforti@gmail.com */
 /********** FONTS (Google-fonts) **********/
-@import url(https://fonts.googleapis.com/css?family=Roboto+Slab);
-@import url(https://fonts.googleapis.com/css?family=Kaushan+Script);
-@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
-@import url(https://fonts.googleapis.com/css?family=Droid+Serif:400,400italic);
+@import url("https://fonts.googleapis.com/css?family=Oswald|Raleway:300,400");
 @font-face {
   font-family: 'FontAwesome';
   src: url("fonts/fontawesome-webfont.eot");
@@ -31,7 +28,7 @@ time, mark, audio, video {
   padding: 0;
   border: 0;
   font-size: 100%;
-  font-family: "Roboto Slab";
+  font-family: "Oswald";
   font: inherit;
   vertical-align: baseline; }
 
@@ -71,9 +68,31 @@ table {
 /*************************************/
 /*=========     GENERAL    =========*/
 /***********************************/
+body {
+  font-family: "Raleway"; }
+
+img {
+  width: 100%; }
+
 section {
   padding: 40px 0 40px 0;
   text-align: center; }
+  section .section-title {
+    font-family: "Oswald";
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    text-transform: uppercase; }
+  section .section-subtitle {
+    font-size: 1.2em;
+    margin-bottom: 20px; }
+
+i.fa {
+  font-size: 30px; }
+
+.fixed {
+  position: fixed;
+  z-index: 20;
+  width: 100%; }
 
 /*************************************/
 /*=========     HEADER     =========*/
@@ -92,13 +111,40 @@ header .header-main .navbar-default {
     border-color: #fff; }
   header .header-main .navbar-default .navbar-nav > li > a {
     color: #fff; }
+    header .header-main .navbar-default .navbar-nav > li > a.borde-centro {
+      display: inline-block;
+      vertical-align: middle;
+      -webkit-transform: translateZ(0);
+      transform: translateZ(0);
+      box-shadow: 0 0 1px transparent;
+      -webkit-backface-visibility: hidden;
+      backface-visibility: hidden;
+      -moz-osx-font-smoothing: grayscale;
+      position: relative;
+      overflow: hidden; }
+      header .header-main .navbar-default .navbar-nav > li > a.borde-centro:before {
+        content: "";
+        position: absolute;
+        z-index: -1;
+        left: 50%;
+        right: 50%;
+        bottom: 0;
+        background: #47daff;
+        height: 4px;
+        -webkit-transition-property: left, right;
+        transition-property: left, right;
+        -webkit-transition-duration: 0.3s;
+        transition-duration: 0.3s;
+        -webkit-transition-timing-function: ease-out;
+        transition-timing-function: ease-out; }
+      header .header-main .navbar-default .navbar-nav > li > a.borde-centro:hover:before, header .header-main .navbar-default .navbar-nav > li > a.borde-centro:focus:before, header .header-main .navbar-default .navbar-nav > li > a.borde-centro:active:before {
+        left: 0;
+        right: 0; }
   header .header-main .navbar-default .logo a {
     padding: 0; }
     header .header-main .navbar-default .logo a img {
-      width: 100%;
       height: 100%; }
 header #myCarousel .carousel-inner img {
-  width: 100%;
   max-height: 600px; }
 header #myCarousel .carousel-inner .carousel-caption {
   background: #001263;
@@ -108,9 +154,92 @@ header #myCarousel .carousel-inner .carousel-caption {
   width: 15%;
   left: 75%; }
 
+/*************************************/
+/*==========   SERVICIOS  ==========*/
+/***********************************/
+#servicios .servicio {
+  overflow: hidden;
+  box-sizing: border-box;
+  padding: 10px; }
+  #servicios .servicio img {
+    border: 1px solid #e3e3e3; }
+  #servicios .servicio .servicio-detalle {
+    position: absolute;
+    bottom: 0;
+    font-size: 48px;
+    text-transform: uppercase;
+    left: 0%;
+    background-color: rgba(155, 155, 155, 0.3);
+    width: 100%;
+    height: 100%;
+    -webkit-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    -o-transition: all 0.4s;
+    transition: all 0.4s;
+    opacity: 0; }
+    #servicios .servicio .servicio-detalle h1 {
+      position: relative;
+      top: 40%;
+      border-top: 2px solid #fff;
+      border-bottom: 2px solid #fff;
+      background: rgba(30, 30, 30, 0.5);
+      color: #fff; }
+  #servicios .servicio:hover .servicio-detalle {
+    opacity: 1; }
+
+/*************************************/
+/*=========     BANNER     =========*/
+/***********************************/
+#banner p {
+  display: inline-block; }
+#banner img {
+  width: 80px;
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 20px; }
+
+/*************************************/
+/*=========     CONTACTO   =========*/
+/***********************************/
 #contacto {
   padding-bottom: 0; }
+  #contacto .datosLegales li {
+    overflow: auto;
+    padding-left: 140px;
+    margin-bottom: 20px; }
+    #contacto .datosLegales li i {
+      float: left; }
+    #contacto .datosLegales li .datosLegales-descripcion {
+      float: left;
+      margin-left: 30px;
+      text-align: left; }
+  #contacto .redesSociales {
+    color: #fff; }
+    #contacto .redesSociales .icon {
+      width: 45px;
+      height: 45px;
+      padding-top: 6px;
+      display: inline-block; }
+      #contacto .redesSociales .icon.twitter {
+        background-color: #55acee; }
+      #contacto .redesSociales .icon.facebook {
+        background-color: #3b5998; }
+      #contacto .redesSociales .icon.google {
+        background-color: #dd4b39; }
+      #contacto .redesSociales .icon.linkedin {
+        background-color: #007bb5; }
+  #contacto form {
+    text-align: left; }
+    #contacto form label {
+      margin-bottom: 5px; }
+    #contacto form .form-group {
+      padding-right: 10px !important; }
+      #contacto form .form-group .form-control {
+        margin-bottom: 25px; }
 
+/*************************************/
+/*=========     FOOTER     =========*/
+/***********************************/
 footer {
   padding: 10px 0 10px 0;
   background-color: #001263;
