@@ -11,6 +11,12 @@
 
 // 4. Layout (los estilos de nuestra estructura principal)
 @import '_layout';
+@import '_layout_home';
+@import '_layout_productos';
+@import '_layout_alquiler';
+@import '_layout_asesoria';
+@import '_layout_control';
+@import '_layout_postventa';
 
 // 5. Media-Queries (los media-queries siempre van al final)
 @import '_media-queries';
