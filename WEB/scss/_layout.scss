@@ -47,6 +47,17 @@ i.fa {
   width: 100%;
   box-shadow: 2px 2px 10px #434343;
 }
+.btn-tecno{
+  border-color: $main-color;
+  color: $main-color;
+  text-transform: uppercase;
+  margin-top: 20px;
+  border-radius: 0;
+  &:hover, &:focus{
+    background-color: $main-color;
+    color: #fff;
+  }
+}
 
 /****************************************/
 /*=========     HOVER IMG     =========*/
