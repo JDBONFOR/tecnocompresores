@@ -95,6 +95,17 @@
       img{
         height: 200px;
       }
+      .atlas-copy{
+        width: 80px;
+        padding: 2px;
+        background: $main-color;
+        color: #fff;
+        font-size: .8em;
+        position: absolute;
+        bottom: 90px;
+        right: 30px;
+        opacity: 0.8;
+      }
       .elemento-detalle {
         @extend .img-hover-effect;
         left: 10px;
@@ -112,6 +123,9 @@
         text-align: left;
         margin-top: 25px;
         color: $main-color;
+        .section-subtitle{
+          font-size: 1em;
+        }
       }
     }
   }

@@ -348,6 +348,16 @@ header #myCarousel .carousel-inner .carousel-caption {
     opacity: 1; }
   .elementos li .elemento img {
     height: 200px; }
+  .elementos li .elemento .atlas-copy {
+    width: 80px;
+    padding: 2px;
+    background: #001263;
+    color: #fff;
+    font-size: .8em;
+    position: absolute;
+    bottom: 90px;
+    right: 30px;
+    opacity: 0.8; }
   .elementos li .elemento .elemento-detalle {
     left: 10px;
     right: 10px;
@@ -362,6 +372,8 @@ header #myCarousel .carousel-inner .carousel-caption {
     text-align: left;
     margin-top: 25px;
     color: #001263; }
+    .elementos li .elemento .elemento-title .section-subtitle {
+      font-size: 1em; }
 
 /* Smaller than standard 960 (devices and browsers) */
 /* Tablet Portrait size to standard 960 (devices and browsers) */
