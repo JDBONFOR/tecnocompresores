@@ -1,0 +1,36 @@
+/****************************/
+/********* GENERAL *********/
+/****************************/
+
+
+/********************************/
+/********* DESCRIPCION *********/
+/******************************/
+.servicio {
+  .servicio-descripcion{
+    text-align: left;
+    padding-left: 50px;
+    .section-subtitle{
+      text-transform: uppercase;
+      color: $main-color;
+    }
+    img {
+        width: 570px;
+        height: 400px;
+        margin-bottom: 25px;
+    }
+    p {
+      line-height: 1.2em;
+      margin-bottom: 25px;
+    }
+    .btn-default{
+      border-color: $main-color;
+      color: $main-color;
+      text-transform: uppercase;
+      &:hover, &:focus{
+        background-color: $main-color;
+        color: #fff;
+      }
+    }
+  }
+}

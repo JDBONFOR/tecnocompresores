@@ -72,6 +72,64 @@ i.fa {
   opacity: 0;
 }
 
+/*************************/
+/********* MENU *********/
+/***********************/
+.menu-categorias {
+  text-align: left;
+  .menu-categoria-contenido {
+    padding: 20px 0 20px 20px;
+    position: relative;
+    border-bottom: 1px solid #dcdcdc;
+    &:before{
+      position: absolute;
+      top: 20px;
+      left: 0;
+      display: block;
+      content: "\f0da";
+      font-family: 'FontAwesome';
+      font-size: 14px;
+      margin-right: 10px;
+      font-style: normal;
+      font-weight: normal;
+      line-height: 1.2;
+    }
+    a{
+      color: $main-color;
+      &:hover{
+        text-decoration: none;
+      }
+    }
+    .menu-categoria-contenido-tipos li {
+      margin-top: 10px;
+      margin-left: 15px;
+      transition: all .2s;
+      padding: 5px;
+      &:hover{
+        background-color: $main-color;
+        a{
+          color:#fff;
+        }
+      }
+      a{
+        color: #95989A;
+        &:hover{
+          text-decoration: none;
+        }
+      }
+    }
+  }
+  &:after{
+    content: "";
+    width: 1px;
+    background-color: #dcdcdc; 
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: -20px;
+  }
+}
+
 /*************************************/
 /*=========     FOOTER     =========*/
 /***********************************/
