@@ -147,7 +147,7 @@ header{
   }
   .redesSociales{
     color: #fff;
-    .icon{
+    .icon {
       width: 45px;
       height: 45px;
       padding-top: 6px;
@@ -164,7 +164,11 @@ header{
       &.linkedin{
         background-color: #007bb5;
       }
+      a, &:hover, &:visited, &:focus {
+        color: #fff;
+      }
     }
+
   }
   form {
     text-align: left;
