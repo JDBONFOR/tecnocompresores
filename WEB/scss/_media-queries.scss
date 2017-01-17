@@ -1,24 +1,130 @@
 /* Smaller than standard 960 (devices and browsers) */
 @media only screen and (max-width: 1152px) {
-
+  .fixed{
+    width: 100%;
+  }
 }
 
 /* Tablet Portrait size to standard 960 (devices and browsers) */
 @media only screen and (min-width: 768px) and (max-width: 1152px) {
-
+  .fixed{
+    width: 100%;
+  }
+  .browser {
+    padding-bottom: 0;
+  }
+  #contacto {
+    .datosLegales {
+      li {
+        padding-left: 15px;
+      }
+    }
+    .redesSociales{
+      margin-bottom: 25px;
+    }
+    img{
+      margin-top: 15px;
+    }
+  }
+  .grilla {
+    margin-top: 25px;
+    .elementos {
+      li {
+        width: 50%;
+        height: auto;
+      }
+    }
+  }
+  .servicio, .productos {
+    padding-top: 0;
+    .servicio-descripcion, .producto-descripcion {
+      margin-top: 25px;
+      padding-left: 15px;
+      img{
+        width: 100%;
+        height: auto;
+      }
+    }
+  }
 }
 
 /* All Mobile Sizes (devices and browser) */
 @media only screen and (max-width: 767px) {
-
+  .fixed{
+    width: 100%;
+  }
+  .browser {
+    padding-bottom: 0;
+  }
+  #contacto {
+    .datosLegales {
+      li {
+        padding-left: 15px;
+      }
+    }
+    .redesSociales{
+      margin-bottom: 25px;
+    }
+    img{
+      margin-top: 15px;
+    }
+  }
+  .servicio, .productos {
+    padding-top: 0;
+    .servicio-descripcion, .producto-descripcion {
+      margin-top: 25px;
+      padding-left: 15px;
+      img{
+        width: 100%;
+        height: auto;
+      }
+    }
+  }
 }
 
 /* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
 @media only screen and (min-width: 480px) and (max-width: 767px) {
-  
+  .fixed{
+    width: 100%;
+  }
 }
 
 /* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
 @media only screen and (max-width: 479px) {
-
+  .fixed{
+    width: 100%;
+  }
+  header {
+    #myCarousel {
+      .carousel-inner {
+        .carousel-caption {
+          bottom: 35px;
+          width: 55%;
+          left: 23%;
+        }
+      }
+    }
+  }
+  #contacto {
+    .datosLegales {
+      li {
+        padding-left: 15px;
+      }
+    }
+    .redesSociales{
+      margin-bottom: 25px;
+    }
+    img{
+      margin-top: 15px;
+    }
+  }
+  .grilla {
+    margin-top: 25px;
+    .elementos {
+      li {
+        width: 100%;
+        height: auto;
+      }
+    }
+  }
 }
