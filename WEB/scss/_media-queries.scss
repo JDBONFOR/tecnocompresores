@@ -46,6 +46,16 @@
       }
     }
   }
+  #servicios {
+    .servicio {
+      .servicio-detalle {
+        h1 {
+          font-size: 0.4em;
+          padding: 0 30px 0 30px;
+        }
+      }
+    }
+  }
 }
 
 /* All Mobile Sizes (devices and browser) */
@@ -124,6 +134,15 @@
       li {
         width: 100%;
         height: auto;
+      }
+    }
+  }
+  #servicios {
+    .servicio {
+      .servicio-detalle {
+        h1 {
+          font-size: 0.4em;
+        }
       }
     }
   }

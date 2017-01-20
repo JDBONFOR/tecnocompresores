@@ -3,7 +3,7 @@ $(document).ready(function(){
   $('.navbar-right li').on('click',function(){
     var hash = $(this).children('a').attr('href');
     $('html, body').animate({
-      scrollTop: $(hash).offset().top - 50
+      scrollTop: $(hash).offset().top - 70
     }, 1000);  
   });
   $('.dropdown').on('show.bs.dropdown', function(e){
