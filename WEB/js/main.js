@@ -1,10 +1,21 @@
 $(document).ready(function(){
   //SmoothScrolling
+  // NAVBAR
   $('.navbar-right li').on('click',function(){
     var hash = $(this).children('a').attr('href');
-    $('html, body').animate({
-      scrollTop: $(hash).offset().top - 70
-    }, 1000);  
+    if ($(window).width() > 768) {
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top - 60
+      }, 'slow');
+    } if ($(window).width() > 414) {
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top - 70
+      }, 'slow');
+    } else {
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top - 90
+      }, 'slow');
+    }        
   });
   $('.dropdown').on('show.bs.dropdown', function(e){
     $(this).find('.dropdown-menu').first().stop(true, true).slideDown();

@@ -268,7 +268,7 @@ header #myCarousel .carousel-inner .carousel-caption {
 /*************************************/
 /*==========   SERVICIOS  ==========*/
 /***********************************/
-#servicios .servicio:hover .servicio-detalle {
+#servicios .servicio:hover .servicio-detalle, #servicios .servicio:focus .servicio-detalle {
   opacity: 1; }
 #servicios .servicio .servicio-detalle {
   left: 0;
@@ -530,7 +530,9 @@ header #myCarousel .carousel-inner .carousel-caption {
   header #myCarousel .carousel-inner .carousel-caption {
     bottom: 35px;
     width: 55%;
-    left: 23%; }
+    left: 23%;
+    padding-top: 5px;
+    padding-bottom: 5px; }
 
   #contacto .datosLegales li {
     padding-left: 15px; }

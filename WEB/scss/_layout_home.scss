@@ -87,7 +87,7 @@ header{
 #servicios{
   .servicio {
     @extend .img-border-effect;
-    &:hover .servicio-detalle{
+    &:hover .servicio-detalle, &:focus .servicio-detalle {
       opacity: 1;
     }
     .servicio-detalle{
