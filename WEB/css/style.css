@@ -396,9 +396,6 @@ header #myCarousel .carousel-inner .carousel-caption {
   background: #001263;
   color: #fff; }
 
-/****************************/
-/********* GENERAL *********/
-/****************************/
 /********************************/
 /********* DESCRIPCION *********/
 /******************************/
@@ -496,7 +493,7 @@ header #myCarousel .carousel-inner .carousel-caption {
     font-size: 0.4em;
     padding: 0 30px 0 30px; } }
 /* All Mobile Sizes (devices and browser) */
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 768px) {
   .fixed {
     width: 100%; }
 
@@ -517,7 +514,22 @@ header #myCarousel .carousel-inner .carousel-caption {
       padding-left: 15px; }
       .servicio .servicio-descripcion img, .servicio .producto-descripcion img, .productos .servicio-descripcion img, .productos .producto-descripcion img {
         width: 100%;
-        height: auto; } }
+        height: auto; }
+
+  #servicios .servicio .servicio-detalle {
+    left: 3%;
+    bottom: 5%;
+    width: 95%;
+    height: 91%;
+    opacity: 1; }
+
+  .productos .producto-descripcion .carousel {
+    max-width: 70%; }
+    .productos .producto-descripcion .carousel .item img {
+      max-height: 300px; }
+    .productos .producto-descripcion .carousel .item .atlas-copy {
+      bottom: 30px;
+      right: 60px; } }
 /* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
 @media only screen and (min-width: 480px) and (max-width: 767px) {
   .fixed {
@@ -533,6 +545,8 @@ header #myCarousel .carousel-inner .carousel-caption {
     left: 23%;
     padding-top: 5px;
     padding-bottom: 5px; }
+  header .fa-bars {
+    font-size: 18px; }
 
   #contacto .datosLegales li {
     padding-left: 15px; }
@@ -548,6 +562,14 @@ header #myCarousel .carousel-inner .carousel-caption {
       height: auto; }
 
   #servicios .servicio .servicio-detalle h1 {
-    font-size: 0.4em; } }
+    font-size: 0.4em; }
+
+  .productos .producto-descripcion .carousel {
+    max-width: 100%; }
+    .productos .producto-descripcion .carousel .item img {
+      max-height: 200px; }
+    .productos .producto-descripcion .carousel .item .atlas-copy {
+      bottom: 30px;
+      right: 60px; } }
 
 /*# sourceMappingURL=style.css.map */

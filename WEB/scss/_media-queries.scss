@@ -40,7 +40,7 @@
     .servicio-descripcion, .producto-descripcion {
       margin-top: 25px;
       padding-left: 15px;
-      img{
+      img {
         width: 100%;
         height: auto;
       }
@@ -59,7 +59,7 @@
 }
 
 /* All Mobile Sizes (devices and browser) */
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 768px) {
   .fixed{
     width: 100%;
   }
@@ -90,6 +90,33 @@
       }
     }
   }
+  #servicios {
+    .servicio {
+      .servicio-detalle {
+        left: 3%;
+        bottom: 5%;
+        width: 95%;
+        height: 91%;
+        opacity: 1;
+      }
+    }
+  }
+  .productos {
+    .producto-descripcion {
+      .carousel {
+        max-width: 70%;
+        .item {
+          img {
+            max-height: 300px;
+          }
+          .atlas-copy {
+            bottom: 30px;
+            right: 60px;
+          }
+        }
+      }
+    }
+  }
 }
 
 /* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
@@ -115,6 +142,9 @@
           padding-bottom: 5px;
         }
       }
+    }
+    .fa-bars {
+      font-size: 18px;
     }
   }
   #contacto {
@@ -144,6 +174,22 @@
       .servicio-detalle {
         h1 {
           font-size: 0.4em;
+        }
+      }
+    }
+  }
+  .productos {
+    .producto-descripcion {
+      .carousel {
+        max-width: 100%;
+        .item {
+          img {
+            max-height: 200px;
+          }
+          .atlas-copy {
+            bottom: 30px;
+            right: 60px;
+          }
         }
       }
     }
