@@ -84,7 +84,7 @@ section {
   padding: 40px 0 0 0;
   text-align: center; }
   section.servicio, section.productos {
-    padding: 0; }
+    padding: 0 0 20px 0; }
   section .section-title {
     font-family: "Oswald";
     font-size: 1.5em;
@@ -263,6 +263,13 @@ header #myCarousel .carousel-inner .carousel-caption {
   padding-top: 5px; }
 
 /*************************************/
+/*==========   NOSOTROS   ==========*/
+/***********************************/
+#nosotros p {
+  line-height: 25px;
+  margin-bottom: 10px; }
+
+/*************************************/
 /*==========   SERVICIOS  ==========*/
 /***********************************/
 #servicios .servicio:hover .servicio-detalle, #servicios .servicio:focus .servicio-detalle {
@@ -288,7 +295,7 @@ header #myCarousel .carousel-inner .carousel-caption {
 #banner p {
   display: inline-block; }
 #banner img {
-  width: 80px;
+  width: 140px;
   display: inline-block;
   vertical-align: middle;
   margin-left: 20px; }
@@ -299,8 +306,9 @@ header #myCarousel .carousel-inner .carousel-caption {
 #contacto {
   padding-bottom: 0; }
   #contacto .datosLegales li {
-    overflow: auto;
+    overflow: hidden;
     padding-left: 140px;
+    padding-bottom: 5px;
     margin-bottom: 20px; }
     #contacto .datosLegales li i {
       float: left; }
@@ -432,8 +440,7 @@ header #myCarousel .carousel-inner .carousel-caption {
     padding-left: 20px;
     padding-right: 15px; }
     .productos .producto-descripcion .producto-informacion img {
-      width: 80px;
-      height: 40px; }
+      width: 140px; }
 
 /****************************/
 /********* GENERAL *********/

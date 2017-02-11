@@ -83,6 +83,16 @@ header{
 }
 
 /*************************************/
+/*==========   NOSOTROS   ==========*/
+/***********************************/
+#nosotros {
+  p {
+    line-height: 25px;
+    margin-bottom: 10px;
+  }
+}
+
+/*************************************/
 /*==========   SERVICIOS  ==========*/
 /***********************************/
 #servicios{
@@ -120,7 +130,7 @@ header{
     display: inline-block
   }
   img{
-    width: 80px;
+    width: 140px;
     display: inline-block;
     vertical-align: middle;
     margin-left: 20px;
@@ -134,8 +144,9 @@ header{
   padding-bottom: 0;
   .datosLegales{
     li{
-      overflow: auto;
+      overflow: hidden;
       padding-left: 140px;
+      padding-bottom: 5px;
       margin-bottom: 20px;
       i {
         float: left;

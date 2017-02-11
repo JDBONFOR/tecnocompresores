@@ -17,7 +17,7 @@ section {
   padding: 40px 0 0 0;
   text-align: center;
   &.servicio, &.productos {
-    padding: 0;
+    padding: 0 0 20px 0;
   }
   .section-title {
     font-family: $main-font;
